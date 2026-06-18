@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifs & formules — À l'Aveugle</title>
+  <meta name="description" content="Découverte, Expérience ou Privatisation : choisissez votre formule de dîner-jeu À l'Aveugle. Manches, durée, boissons et public pour chaque offre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="À l'Aveugle, accueil">
+        <svg class="brand__mask" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+        <span class="brand__name">À L'AVEUGLE</span>
+        <span class="brand__tag">Restaurant · Jeu de dégustation</span>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link" href="index.html">Accueil</a></li>
+        <li><a class="nav__link" href="concept.html">Concept</a></li>
+        <li><a class="nav__link" href="evenement.html">Événement</a></li>
+        <li><a class="nav__link is-active" href="tarif.html">Tarif</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--coral"><span class="btn-label">Réserver</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 00-8 8h16a8 8 0 00-8-8Zm-9 9a1 1 0 100 2h18a1 1 0 100-2H3Z"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <svg class="page-hero__deco" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+      <div class="container page-hero__inner">
+        <div class="breadcrumb">Accueil · Tarif</div>
+        <h1>Choisissez votre <span class="coral">formule.</span></h1>
+        <p>Trois façons de jouer, selon votre envie et votre groupe. Les prix indiqués sont indicatifs et seront confirmés lors de la réservation.</p>
+      </div>
+    </section>
+
+    <section class="section section--cream">
+      <div class="container">
+        <div class="pricing">
+          <!-- Découverte -->
+          <article class="price-card reveal">
+            <h3 class="price-card__name">Découverte</h3>
+            <p class="price-card__tagline">Pour goûter au concept, tout simplement.</p>
+            <div class="price-card__price">dès 39&nbsp;€ <small>/ pers.</small></div>
+            <div class="price-card__unit">Prix indicatif à confirmer</div>
+            <ul class="price-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>3 manches sélectionnées</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Durée : environ 1h15</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Idéal en couple ou petit groupe</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Boissons en option</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Mini-classement final</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost">Réserver la Découverte</a>
+          </article>
+
+          <!-- Expérience (mise en avant) -->
+          <article class="price-card price-card--featured reveal">
+            <span class="price-card__flag">Le grand jeu ★</span>
+            <h3 class="price-card__name">Expérience</h3>
+            <p class="price-card__tagline">L'expérience complète, du premier indice au dessert.</p>
+            <div class="price-card__price">dès 69&nbsp;€ <small>/ pers.</small></div>
+            <div class="price-card__unit">Prix indicatif à confirmer</div>
+            <ul class="price-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Les 6 manches complètes</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Durée : environ 2h30</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Classement final & récompense</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Accords boissons disponibles</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Parfaite entre amis ou en famille</li>
+            </ul>
+            <a href="contact.html" class="btn btn--coral">Réserver l'Expérience</a>
+          </article>
+
+          <!-- Groupe / Privatisation -->
+          <article class="price-card reveal">
+            <h3 class="price-card__name">Groupe & Privatisation</h3>
+            <p class="price-card__tagline">Pour vos événements privés et professionnels.</p>
+            <div class="price-card__price">Sur devis</div>
+            <div class="price-card__unit">Formule à personnaliser</div>
+            <ul class="price-card__list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Adaptée au nombre de personnes</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Privatisation possible</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Manches personnalisées</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Animation dédiée</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"/></svg>Devis sous 48&nbsp;h</li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost">Demander un devis</a>
+          </article>
+        </div>
+
+        <p class="form__note reveal" style="text-align:center;margin-top:2rem;">
+          Les tarifs sont des estimations et seront confirmés selon le menu, la date et le nombre de participants. Restrictions alimentaires&nbsp;? On s'adapte&nbsp;: précisez-le à la réservation.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--cream2">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">Questions fréquentes</p>
+          <h2 class="section-title reveal">Avant de réserver</h2>
+        </div>
+        <div class="faq reveal">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Faut-il s'y connaître en cuisine ou en vin&nbsp;?<span class="plus">+</span></button>
+            <div class="faq__a"><p>Pas du tout. Le jeu est conçu pour les curieux comme pour les fins palais. On vous guide, et se tromper fait partie du plaisir.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Et les allergies ou régimes alimentaires&nbsp;?<span class="plus">+</span></button>
+            <div class="faq__a"><p>On adapte les manches à vos contraintes (végétarien, sans gluten, allergies…). Indiquez-le simplement au moment de la réservation.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Combien de personnes minimum&nbsp;?<span class="plus">+</span></button>
+            <div class="faq__a"><p>L'expérience fonctionne dès 2 personnes. Pour les groupes et privatisations, on s'adapte jusqu'à de grandes tablées — parlons-en.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Les boissons sont-elles incluses&nbsp;?<span class="plus">+</span></button>
+            <div class="faq__a"><p>Selon la formule. La Découverte propose les boissons en option, l'Expérience permet d'ajouter des accords, et tout est personnalisable pour les groupes.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Peut-on vraiment tricher&nbsp;?<span class="plus">+</span></button>
+            <div class="faq__a"><p>Vous pouvez essayer. Notre pirate s'y emploie à chaque service. Il finit toujours dernier. 🏴‍☠️</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Une formule en tête&nbsp;?</h2>
+          <p class="cta-band__sub">Réservez ou demandez un devis personnalisé en deux minutes.</p>
+        </div>
+        <a href="contact.html" class="btn btn--light btn--lg">Réserver maintenant <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__name">À L'AVEUGLE</span>
+          <p>Le restaurant-jeu où le menu reste secret et où vos papilles mènent l'enquête.</p>
+        </div>
+        <div class="footer__col"><h4>Naviguer</h4>
+          <a href="index.html">Accueil</a><a href="concept.html">Concept</a><a href="evenement.html">Événement</a><a href="tarif.html">Tarif</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col"><h4>Infos</h4>
+          <span>Adresse à compléter</span><span>Horaires à compléter</span><a href="contact.html">Réserver une table</a>
+        </div>
+        <div class="footer__col"><h4>Contact</h4>
+          <a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a><a href="tel:+33000000000">Tél. à compléter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 À l'Aveugle — Tous droits réservés.</span>
+        <span class="wink">Pas de triche. Promis. 🏴‍☠️</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

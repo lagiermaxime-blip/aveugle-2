@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À l'Aveugle — Le dîner mystère où vos papilles mènent l'enquête</title>
+  <meta name="description" content="À l'Aveugle : un restaurant-jeu de dégustation à l'aveugle. Un dîner mystère en 6 manches où vous devinez goûts, saveurs et ingrédients. Réservez votre expérience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="À l'Aveugle, accueil">
+        <svg class="brand__mask" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true">
+          <path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/>
+        </svg>
+        <span class="brand__name">À L'AVEUGLE</span>
+        <span class="brand__tag">Restaurant · Jeu de dégustation</span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link is-active" href="index.html">Accueil</a></li>
+        <li><a class="nav__link" href="concept.html">Concept</a></li>
+        <li><a class="nav__link" href="evenement.html">Événement</a></li>
+        <li><a class="nav__link" href="tarif.html">Tarif</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--coral">
+          <span class="btn-label">Réserver</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 00-8 8h16a8 8 0 00-8-8Zm-9 9a1 1 0 100 2h18a1 1 0 100-2H3Z"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__copy reveal">
+          <h1 class="hero__title">
+            <span>DEVINEZ</span><br>
+            <span class="navy">CE QUE</span> <span class="mark">VOUS</span><br>
+            DÉGUSTEZ.
+          </h1>
+          <p class="hero__text">
+            Un dîner mystère. 6 manches. Un seul but : deviner les goûts,
+            les saveurs, les ingrédients. Saurez-vous relever le défi&nbsp;?
+          </p>
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn--lg">Réserver une expérience <span class="arrow">→</span></a>
+            <a href="concept.html" class="btn btn--link btn--lg">Découvrir le concept</a>
+          </div>
+        </div>
+        <div class="hero__art reveal">
+          <img src="hero.png" alt="Trois convives aux yeux bandés dégustent à l'aveugle tandis qu'un pirate tente de tricher">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6 MANCHES + TRICHER ============ -->
+    <section class="manches">
+      <div class="manches__layout">
+        <div class="manches__main reveal">
+          <h2 class="manches__title">6 manches. 6 énigmes. 1 seule expérience.</h2>
+          <div class="steps">
+            <!-- Manche 1 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">1</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><ellipse cx="24" cy="30" rx="16" ry="6"/><path d="M12 30c2-7 6-10 12-10s10 3 12 10"/><circle cx="20" cy="22" r="2" fill="#F47C68"/><circle cx="28" cy="24" r="2" fill="#F47C68"/></svg>
+              </div>
+              <div class="step__name">Manche Apéro</div>
+              <p class="step__desc">Une mise en bouche pour éveiller vos sens.</p>
+            </div>
+            <!-- Manche 2 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">2</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M12 28c0-8 5-12 12-12s12 4 12 12Z"/><line x1="9" y1="28" x2="39" y2="28"/><text x="24" y="26" font-size="14" fill="#F47C68" text-anchor="middle" stroke="none">?</text></svg>
+              </div>
+              <div class="step__name">Manche Mystère</div>
+              <p class="step__desc">L'inattendu s'invite à votre table.</p>
+            </div>
+            <!-- Manche 3 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">3</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M16 12h16l-2 12a6 6 0 01-12 0Z" fill="#9E2E22" stroke="#F47C68"/><line x1="24" y1="30" x2="24" y2="38"/><line x1="18" y1="38" x2="30" y2="38"/></svg>
+              </div>
+              <div class="step__name">Manche Boisson</div>
+              <p class="step__desc">À vous de deviner la boisson mystère.</p>
+            </div>
+            <!-- Manche 4 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">4</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><circle cx="24" cy="26" r="13"/><circle cx="24" cy="26" r="7" fill="#9E2E22" stroke="none"/><line x1="10" y1="42" x2="38" y2="42"/></svg>
+              </div>
+              <div class="step__name">Manche Plat principal</div>
+              <p class="step__desc">Reconnaissez les saveurs et les textures.</p>
+            </div>
+            <!-- Manche 5 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">5</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M12 32l18-14 6 6-10 14H12Z"/><circle cx="22" cy="26" r="1.6" fill="#F47C68"/><circle cx="27" cy="30" r="1.6" fill="#F47C68"/></svg>
+              </div>
+              <div class="step__name">Manche Fromage</div>
+              <p class="step__desc">Identifiez, comparez, évaluez.</p>
+            </div>
+            <!-- Manche 6 -->
+            <div class="step">
+              <div class="step__disc"><span class="step__num">6</span>
+                <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M14 34h20l-2-10H16Z"/><path d="M18 24c0-6 3-9 6-9s6 3 6 9"/><circle cx="24" cy="13" r="2" fill="#F47C68" stroke="none"/></svg>
+              </div>
+              <div class="step__name">Manche Dessert</div>
+              <p class="step__desc">La touche sucrée et la révélation finale.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="cheat reveal">
+          <h2 class="cheat__title">Tricher&nbsp;?</h2>
+          <p class="cheat__script">Ça ne vous sauvera pas&nbsp;!</p>
+          <p class="cheat__text">Ici, même les pirates se font prendre.</p>
+          <a href="concept.html#tricher" class="btn btn--light">En savoir plus <span class="arrow">→</span></a>
+          <img class="cheat__pirate" src="pirate.png" alt="Pirate avec cache-œil qui tente de tricher">
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ POURQUOI + ÉVÉNEMENT ============ -->
+    <section class="why-event">
+      <div class="why reveal">
+        <div class="why__grid">
+          <div class="why__item">
+            <svg class="why__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="17" cy="18" r="6"/><circle cx="31" cy="18" r="6"/><path d="M7 38c0-6 4-10 10-10s10 4 10 10M25 38c0-6 4-10 10-10s10 4 10 10" stroke-linecap="round"/></svg>
+            <div class="why__title">Un moment unique</div>
+            <p class="why__desc">Partagez une expérience originale et mémorable.</p>
+          </div>
+          <div class="why__item">
+            <svg class="why__icon" viewBox="0 0 48 48" fill="currentColor"><path d="M6 18c8-5 17-3 18 2 1-5 10-7 18-2 4 3 4 10 0 14-6 6-15 4-19-2-1-2-5-2-6 0-4 6-13 8-19 2-4-4-4-11 0-14Zm9 4a5 5 0 100 10 5 5 0 000-10Zm18 0a5 5 0 100 10 5 5 0 000-10Z"/></svg>
+            <div class="why__title">À l'aveugle</div>
+            <p class="why__desc">Vos sens sont vos seuls alliés.</p>
+          </div>
+          <div class="why__item">
+            <svg class="why__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8h16v8a8 8 0 01-16 0Z"/><path d="M16 11H9v3a5 5 0 005 5M32 11h7v3a5 5 0 01-5 5"/><line x1="24" y1="24" x2="24" y2="32"/><path d="M16 40h16l-2-8H18Z"/></svg>
+            <div class="why__title">Défiez vos amis</div>
+            <p class="why__desc">Gagnez des points et tentez la première place.</p>
+          </div>
+          <div class="why__item">
+            <svg class="why__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 30a14 14 0 0128 0Z" fill="currentColor" stroke="none"/><line x1="7" y1="34" x2="41" y2="34" stroke-linecap="round"/><line x1="24" y1="14" x2="24" y2="9" stroke-linecap="round"/></svg>
+            <div class="why__title">Des produits soignés</div>
+            <p class="why__desc">Une cuisine créative, locale et de qualité.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-promo reveal">
+        <div class="event-promo__art"><img src="event.png" alt=""></div>
+        <h2 class="event-promo__title">Parfait pour vos événements</h2>
+        <p class="event-promo__text">Anniversaire, EVJF/EVG, entreprise, team building, soirée entre amis…</p>
+        <a href="evenement.html" class="btn btn--coral">Découvrir nos offres <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINALE ============ -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Prêt à mettre vos sens au défi&nbsp;?</h2>
+          <p class="cta-band__sub">Réservez votre table et vivez l'expérience À l'Aveugle.</p>
+        </div>
+        <a href="contact.html" class="btn btn--lg">Réserver maintenant <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__name">À L'AVEUGLE</span>
+          <p>Le restaurant-jeu où le menu reste secret et où vos papilles mènent l'enquête.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Naviguer</h4>
+          <a href="index.html">Accueil</a>
+          <a href="concept.html">Concept</a>
+          <a href="evenement.html">Événement</a>
+          <a href="tarif.html">Tarif</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Infos</h4>
+          <span>Adresse à compléter</span>
+          <span>Horaires à compléter</span>
+          <a href="contact.html">Réserver une table</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a>
+          <a href="tel:+33000000000">Tél. à compléter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 À l'Aveugle — Tous droits réservés.</span>
+        <span class="wink">Pas de triche. Promis. 🏴‍☠️</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

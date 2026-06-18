@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & réservation — À l'Aveugle</title>
+  <meta name="description" content="Réservez votre dîner mystère ou demandez un devis pour votre événement À l'Aveugle. Formulaire de contact, coordonnées et réseaux sociaux.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="À l'Aveugle, accueil">
+        <svg class="brand__mask" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+        <span class="brand__name">À L'AVEUGLE</span>
+        <span class="brand__tag">Restaurant · Jeu de dégustation</span>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link" href="index.html">Accueil</a></li>
+        <li><a class="nav__link" href="concept.html">Concept</a></li>
+        <li><a class="nav__link" href="evenement.html">Événement</a></li>
+        <li><a class="nav__link" href="tarif.html">Tarif</a></li>
+        <li><a class="nav__link is-active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="#form" class="btn btn--coral"><span class="btn-label">Réserver</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 00-8 8h16a8 8 0 00-8-8Zm-9 9a1 1 0 100 2h18a1 1 0 100-2H3Z"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <svg class="page-hero__deco" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+      <div class="container page-hero__inner">
+        <div class="breadcrumb">Accueil · Contact</div>
+        <h1>Réservez votre <span class="coral">énigme.</span></h1>
+        <p>Une table à réserver, un événement à organiser ou une simple question&nbsp;? Écrivez-nous : on vous répond vite, sans rien dévoiler du menu (promis).</p>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="form">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Formulaire -->
+          <div class="reveal">
+            <h2 class="section-title" style="font-size:1.9rem;margin-bottom:.4rem;">Demande de réservation</h2>
+            <p class="section-lead" style="margin-bottom:1.8rem;">Remplissez le formulaire, on revient vers vous pour confirmer la date et les détails.</p>
+
+            <div class="form__success" id="formSuccess">
+              ✅ Merci&nbsp;! Votre demande est bien partie. On vous recontacte très vite — et chut, on ne dira rien du menu.
+            </div>
+
+            <form class="form" id="contactForm" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+                </div>
+                <div class="field">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="field">
+                  <label for="tel">Téléphone</label>
+                  <input type="tel" id="tel" name="tel" autocomplete="tel">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="personnes">Nombre de personnes</label>
+                  <input type="number" id="personnes" name="personnes" min="1" max="200" placeholder="Ex : 4">
+                </div>
+                <div class="field">
+                  <label for="type">Type d'événement</label>
+                  <select id="type" name="type">
+                    <option value="">Sélectionnez…</option>
+                    <option>Dîner en couple</option>
+                    <option>Soirée entre amis</option>
+                    <option>Anniversaire</option>
+                    <option>EVJF / EVG</option>
+                    <option>Événement d'entreprise</option>
+                    <option>Team building</option>
+                    <option>Soirée privée / privatisation</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="field">
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Occasion, envies, contraintes alimentaires, formule visée…"></textarea>
+              </div>
+              <button type="submit" class="btn btn--coral btn--lg" style="justify-content:center;">Envoyer ma demande <span class="arrow">→</span></button>
+              <p class="form__note">En envoyant ce formulaire, vous acceptez d'être recontacté au sujet de votre demande. Aucune donnée n'est partagée à des tiers.</p>
+            </form>
+          </div>
+
+          <!-- Infos -->
+          <aside class="contact-info reveal">
+            <h3>Nous trouver</h3>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div><div class="info-item__label">Adresse</div><div class="info-item__value">Adresse à compléter</div></div>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <div><div class="info-item__label">Email</div><div class="info-item__value"><a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a></div></div>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2Z"/></svg>
+              <div><div class="info-item__label">Téléphone</div><div class="info-item__value">Tél. à compléter</div></div>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><div class="info-item__label">Horaires</div><div class="info-item__value">Horaires à compléter</div></div>
+            </div>
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              <div><div class="info-item__label">Réservation en ligne</div><div class="info-item__value">Lien à compléter</div></div>
+            </div>
+
+            <div class="socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 011-1Z"/></svg></a>
+              <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.3 1.7 3.8 4 4v3c-1.5 0-2.9-.4-4-1.2V15a6 6 0 11-6-6v3a3 3 0 103 3V3h3Z"/></svg></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__name">À L'AVEUGLE</span>
+          <p>Le restaurant-jeu où le menu reste secret et où vos papilles mènent l'enquête.</p>
+        </div>
+        <div class="footer__col"><h4>Naviguer</h4>
+          <a href="index.html">Accueil</a><a href="concept.html">Concept</a><a href="evenement.html">Événement</a><a href="tarif.html">Tarif</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col"><h4>Infos</h4>
+          <span>Adresse à compléter</span><span>Horaires à compléter</span><a href="#form">Réserver une table</a>
+        </div>
+        <div class="footer__col"><h4>Contact</h4>
+          <a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a><a href="tel:+33000000000">Tél. à compléter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 À l'Aveugle — Tous droits réservés.</span>
+        <span class="wink">Pas de triche. Promis. 🏴‍☠️</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

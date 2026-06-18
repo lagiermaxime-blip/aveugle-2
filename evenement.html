@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Événements & privatisation — À l'Aveugle</title>
+  <meta name="description" content="Anniversaire, EVJF/EVG, soirée d'entreprise, team building : privatisez À l'Aveugle pour un dîner-jeu mémorable. Découvrez comment se déroule un événement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="À l'Aveugle, accueil">
+        <svg class="brand__mask" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+        <span class="brand__name">À L'AVEUGLE</span>
+        <span class="brand__tag">Restaurant · Jeu de dégustation</span>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link" href="index.html">Accueil</a></li>
+        <li><a class="nav__link" href="concept.html">Concept</a></li>
+        <li><a class="nav__link is-active" href="evenement.html">Événement</a></li>
+        <li><a class="nav__link" href="tarif.html">Tarif</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--coral"><span class="btn-label">Réserver</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 00-8 8h16a8 8 0 00-8-8Zm-9 9a1 1 0 100 2h18a1 1 0 100-2H3Z"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <svg class="page-hero__deco" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+      <div class="container page-hero__inner">
+        <div class="breadcrumb">Accueil · Événement</div>
+        <h1>Une soirée qu'on <span class="coral">n'oublie pas.</span></h1>
+        <p>Anniversaire, team building, EVJF/EVG ou dîner entre amis : À l'Aveugle transforme votre événement en jeu de dégustation où tout le monde participe, rit et repart avec un souvenir (et peut-être un titre de champion).</p>
+      </div>
+    </section>
+
+    <!-- Pour qui -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">Pour qui&nbsp;?</p>
+          <h2 class="section-title reveal">Toutes les occasions sont bonnes pour deviner</h2>
+          <p class="section-lead reveal">Le concept s'adapte à votre groupe et à votre moment. Du dîner intime à la grande tablée d'entreprise.</p>
+        </div>
+        <div class="tag-grid reveal" style="justify-content:center;">
+          <span class="tag">🥂 Soirée entre amis</span>
+          <span class="tag">❤️ Dîner en couple</span>
+          <span class="tag">🎂 Anniversaire</span>
+          <span class="tag">💼 Événement d'entreprise</span>
+          <span class="tag">🤝 Team building</span>
+          <span class="tag">👰 EVJF / EVG</span>
+          <span class="tag">🎉 Soirée privée</span>
+          <span class="tag">🍽️ Expérience de groupe</span>
+          <span class="tag">✨ Événement sur mesure</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi nous choisir -->
+    <section class="section section--cream2">
+      <div class="container">
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="16" cy="18" r="6"/><circle cx="32" cy="18" r="6"/><path d="M6 38c0-6 4-10 10-10s10 4 10 10M22 38c0-6 4-10 10-10s10 4 10 10" stroke-linecap="round"/></svg>
+            <h3 class="card__title">Tout le monde joue</h3>
+            <p class="card__text">Pas de spectateurs : chaque invité goûte, devine et marque des points. Idéal pour briser la glace et faire parler tout le monde.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 6l5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1Z"/></svg>
+            <h3 class="card__title">Un souvenir marquant</h3>
+            <p class="card__text">Surprise, fous rires et révélations : on parle encore de la soirée des semaines plus tard. Bien plus qu'un simple repas.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="14" width="30" height="24" rx="3"/><path d="M9 20h30M18 14v-4h12v4" stroke-linecap="round"/></svg>
+            <h3 class="card__title">Clé en main</h3>
+            <p class="card__text">Un animateur, des manches rythmées, un classement final. Vous profitez, on s'occupe du reste — y compris des tricheurs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Déroulé -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Le déroulé</p>
+          <h2 class="section-title reveal">Comment se déroule un événement&nbsp;?</h2>
+          <p class="section-lead reveal">Simple, fluide et toujours sous tension (la bonne).</p>
+        </div>
+        <div class="timeline reveal">
+          <div class="tl-item"><div><h3 class="tl-item__title">Accueil des participants</h3><p class="tl-item__text">On vous installe, un mot de bienvenue, une boisson… et déjà un peu de mystère dans l'air.</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Explication des règles</h3><p class="tl-item__text">L'animateur présente le jeu en deux minutes. Pas de mode d'emploi compliqué : on goûte, on devine.</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Lancement des manches</h3><p class="tl-item__text">Apéro, boisson, plat, fromage, dessert… chaque manche apporte son énigme et sa surprise.</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Dégustation à l'aveugle</h3><p class="tl-item__text">Bandeau, semi-mystère ou cloche fermée : vos sens travaillent, vos voisins doutent.</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Réponses & points</h3><p class="tl-item__text">On dévoile, on compte, on conteste (un peu). Les points s'additionnent manche après manche.</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Classement final</h3><p class="tl-item__text">Le grand moment de vérité : qui a le palais le plus fin&nbsp;? Et qui a fini dernier malgré la triche&nbsp;?</p></div></div>
+          <div class="tl-item"><div><h3 class="tl-item__title">Partage & révélation</h3><p class="tl-item__text">Le menu complet est enfin dévoilé. On trinque, on compare ses réponses, on rejoue la soirée.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visuel ambiance -->
+    <section class="section section--navy">
+      <div class="container">
+        <div class="contact-grid" style="align-items:center;">
+          <div class="reveal">
+            <p class="eyebrow">Sur mesure</p>
+            <h2 class="section-title">On adapte le jeu à votre événement</h2>
+            <p class="section-lead" style="max-width:48ch;">Nombre de participants, durée, thème, manches personnalisées, accords boissons, animation dédiée… Dites-nous ce que vous imaginez, on construit l'expérience autour de vous.</p>
+            <p class="section-lead" style="max-width:48ch;">Privatisation totale possible pour les groupes. Devis sur demande, sans engagement.</p>
+            <a href="contact.html" class="btn btn--coral" style="margin-top:1rem;">Demander un devis <span class="arrow">→</span></a>
+          </div>
+          <div class="reveal" style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);">
+            <img src="event.png" alt="Groupe d'amis masqués qui trinquent lors d'une soirée privée À l'Aveugle">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">On organise votre prochaine soirée&nbsp;?</h2>
+          <p class="cta-band__sub">Parlez-nous de votre projet, on s'occupe de la surprise.</p>
+        </div>
+        <a href="contact.html" class="btn btn--light btn--lg">Organiser un événement <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__name">À L'AVEUGLE</span>
+          <p>Le restaurant-jeu où le menu reste secret et où vos papilles mènent l'enquête.</p>
+        </div>
+        <div class="footer__col"><h4>Naviguer</h4>
+          <a href="index.html">Accueil</a><a href="concept.html">Concept</a><a href="evenement.html">Événement</a><a href="tarif.html">Tarif</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col"><h4>Infos</h4>
+          <span>Adresse à compléter</span><span>Horaires à compléter</span><a href="contact.html">Réserver une table</a>
+        </div>
+        <div class="footer__col"><h4>Contact</h4>
+          <a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a><a href="tel:+33000000000">Tél. à compléter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 À l'Aveugle — Tous droits réservés.</span>
+        <span class="wink">Pas de triche. Promis. 🏴‍☠️</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

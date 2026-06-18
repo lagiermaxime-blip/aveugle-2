@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Concept — À l'Aveugle</title>
+  <meta name="description" content="Comment fonctionne À l'Aveugle : un repas mystère en 6 manches, un menu jamais dévoilé, des saveurs à deviner. Découvrez le déroulé du jeu de dégustation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html" class="brand" aria-label="À l'Aveugle, accueil">
+        <svg class="brand__mask" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+        <span class="brand__name">À L'AVEUGLE</span>
+        <span class="brand__tag">Restaurant · Jeu de dégustation</span>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a class="nav__link" href="index.html">Accueil</a></li>
+        <li><a class="nav__link is-active" href="concept.html">Concept</a></li>
+        <li><a class="nav__link" href="evenement.html">Événement</a></li>
+        <li><a class="nav__link" href="tarif.html">Tarif</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="contact.html" class="btn btn--coral"><span class="btn-label">Réserver</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 00-8 8h16a8 8 0 00-8-8Zm-9 9a1 1 0 100 2h18a1 1 0 100-2H3Z"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero">
+      <svg class="page-hero__deco" viewBox="0 0 80 36" fill="currentColor" aria-hidden="true"><path d="M8 6c10-6 22-4 32 4 10-8 22-10 32-4 6 4 6 14 0 20-8 8-20 6-26-2-2-3-8-3-10 0-6 8-18 10-26 2-6-6-6-16-2-20Zm10 6a7 7 0 100 14 7 7 0 000-14Zm44 0a7 7 0 100 14 7 7 0 000-14Z"/></svg>
+      <div class="container page-hero__inner">
+        <div class="breadcrumb">Accueil · Concept</div>
+        <h1>Le menu reste <span class="coral">secret.</span><br>Vos sens font le reste.</h1>
+        <p>À l'Aveugle, on ne lit pas la carte : on la devine. Un repas mystère en plusieurs manches, où chaque bouchée devient une énigme et chaque convive, un enquêteur.</p>
+      </div>
+    </section>
+
+    <!-- Le principe -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 30a14 14 0 0128 0Z" fill="currentColor" stroke="none"/><line x1="6" y1="34" x2="42" y2="34" stroke-linecap="round"/><path d="M30 18l3-3M18 18l-3-3M24 14V9" stroke-linecap="round"/></svg>
+            <h3 class="card__title">Un repas mystère</h3>
+            <p class="card__text">Aucun menu affiché, aucune annonce. Vous découvrez chaque plat au moment où il arrive — et c'est à vous de l'identifier.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 30c0-9 5-14 12-14s12 5 12 14Z"/><line x1="8" y1="30" x2="40" y2="30" stroke-linecap="round"/><text x="24" y="28" font-size="16" fill="currentColor" stroke="none" text-anchor="middle">?</text></svg>
+            <h3 class="card__title">Un jeu de dégustation</h3>
+            <p class="card__text">À chaque manche, une question simple : quel goût, quelle saveur, quel ingrédient&nbsp;? Vos papilles répondent, vos points s'accumulent.</p>
+          </article>
+          <article class="card reveal">
+            <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="15"/><path d="M24 14v10l7 4" stroke-linecap="round"/></svg>
+            <h3 class="card__title">Des manches successives</h3>
+            <p class="card__text">De l'apéro au dessert, l'expérience se déroule comme une partie : six manches, une progression, un classement final.</p>
+          </article>
+        </div>
+        <p class="section-lead reveal" style="margin-top:2.4rem;max-width:none;">
+          Pas besoin d'être un fin gourmet : il suffit d'avoir envie de jouer.
+          On guide, on rigole, on goûte — et parfois, on se trompe royalement. C'est ça, le sel de la soirée.
+        </p>
+      </div>
+    </section>
+
+    <!-- Les 6 manches détaillées -->
+    <section class="section section--cream2">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">Le déroulé</p>
+          <h2 class="section-title reveal">Six manches, six énigmes</h2>
+          <p class="section-lead reveal">Chaque manche a son ambiance et sa surprise. On ne révèle jamais le menu à l'avance — seulement la règle du jeu.</p>
+        </div>
+
+        <div class="round-list">
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">1</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><ellipse cx="24" cy="30" rx="16" ry="6"/><path d="M12 30c2-7 6-10 12-10s10 3 12 10"/></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Apéro</h3>
+              <p class="round__guess">À deviner : la première impression</p>
+              <p class="round__desc">Une mise en bouche pour réveiller les papilles et donner le ton. Légère, surprenante, elle ouvre l'enquête en douceur.</p>
+            </div>
+          </article>
+
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">2</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M12 28c0-8 5-12 12-12s12 4 12 12Z"/><line x1="9" y1="28" x2="39" y2="28"/><text x="24" y="26" font-size="14" fill="#F47C68" stroke="none" text-anchor="middle">?</text></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Mystère</h3>
+              <p class="round__guess">À deviner : l'inattendu</p>
+              <p class="round__desc">Une dégustation où les repères disparaissent. Texture trompeuse, association inattendue : ici, votre intuition est votre meilleure amie.</p>
+            </div>
+          </article>
+
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">3</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M16 12h16l-2 12a6 6 0 01-12 0Z" fill="#9E2E22" stroke="#F47C68"/><line x1="24" y1="30" x2="24" y2="38"/><line x1="18" y1="38" x2="30" y2="38"/></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Boisson</h3>
+              <p class="round__guess">À deviner : un accord, une note</p>
+              <p class="round__desc">Une boisson à reconnaître : un cépage, une note aromatique, une sensation. Avec ou sans alcool, le mystère se boit aussi.</p>
+            </div>
+          </article>
+
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">4</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><circle cx="24" cy="26" r="13"/><circle cx="24" cy="26" r="7" fill="#9E2E22" stroke="none"/><line x1="10" y1="42" x2="38" y2="42"/></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Plat principal</h3>
+              <p class="round__guess">À deviner : les saveurs majeures</p>
+              <p class="round__desc">Le cœur du repas. Reconnaissez les saveurs dominantes, les épices, la cuisson, les textures. La manche où tout se joue.</p>
+            </div>
+          </article>
+
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">5</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M12 32l18-14 6 6-10 14H12Z"/><circle cx="22" cy="26" r="1.6" fill="#F47C68"/><circle cx="27" cy="30" r="1.6" fill="#F47C68"/></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Fromage</h3>
+              <p class="round__guess">À deviner : famille, intensité, origine</p>
+              <p class="round__desc">Identifiez les textures, les familles, les intensités ou les origines. Lait cru ou pâte persillée&nbsp;? À vos déductions.</p>
+            </div>
+          </article>
+
+          <article class="round reveal">
+            <div class="round__badge"><span class="round__num">6</span>
+              <svg viewBox="0 0 48 48" fill="none" stroke="#F47C68" stroke-width="2"><path d="M14 34h20l-2-10H16Z"/><path d="M18 24c0-6 3-9 6-9s6 3 6 9"/><circle cx="24" cy="13" r="2" fill="#F47C68" stroke="none"/></svg>
+            </div>
+            <div>
+              <h3 class="round__name">Manche Dessert</h3>
+              <p class="round__guess">À deviner : l'énigme sucrée finale</p>
+              <p class="round__desc">On finit sur une note sucrée et un dernier défi. Puis vient le grand moment : la révélation complète du menu.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Tricher (clin d'œil) -->
+    <section class="section section--navy" id="tricher">
+      <div class="container">
+        <div class="contact-grid" style="align-items:center;">
+          <div class="reveal">
+            <p class="eyebrow">Le coin des malins</p>
+            <h2 class="section-title">Tricher&nbsp;? <span class="serif" style="color:var(--coral-soft);font-style:italic;">Ça ne vous sauvera pas.</span></h2>
+            <p class="section-lead" style="max-width:48ch;">Jeter un œil sous la cloche, soudoyer le serveur, dégainer une appli… Nous avons tout vu. Surtout lui&nbsp;: notre fameux pirate au cache-œil, persuadé d'avoir trouvé la faille. Spoiler&nbsp;: il termine toujours dernier.</p>
+            <p class="section-lead" style="max-width:48ch;">À l'Aveugle, la seule arme autorisée, ce sont vos sens. Et un peu de mauvaise foi au moment du classement.</p>
+            <a href="contact.html" class="btn btn--coral" style="margin-top:1rem;">Relever le défi (honnêtement) <span class="arrow">→</span></a>
+          </div>
+          <div class="reveal" style="text-align:center;">
+            <img src="pirate.png" alt="Le pirate tricheur d'À l'Aveugle" style="max-width:340px;width:100%;margin-inline:auto;border-radius:var(--radius-lg);box-shadow:0 20px 40px rgba(0,0,0,.4);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">Un restaurant-jeu où chaque bouchée devient une énigme.</h2>
+          <p class="cta-band__sub">Réservez et laissez vos papilles mener l'enquête.</p>
+        </div>
+        <a href="contact.html" class="btn btn--light btn--lg">Réserver une expérience <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="brand__name">À L'AVEUGLE</span>
+          <p>Le restaurant-jeu où le menu reste secret et où vos papilles mènent l'enquête.</p>
+        </div>
+        <div class="footer__col"><h4>Naviguer</h4>
+          <a href="index.html">Accueil</a><a href="concept.html">Concept</a><a href="evenement.html">Événement</a><a href="tarif.html">Tarif</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__col"><h4>Infos</h4>
+          <span>Adresse à compléter</span><span>Horaires à compléter</span><a href="contact.html">Réserver une table</a>
+        </div>
+        <div class="footer__col"><h4>Contact</h4>
+          <a href="mailto:contact@a-laveugle.fr">contact@a-laveugle.fr</a><a href="tel:+33000000000">Tél. à compléter</a><a href="#">Instagram</a><a href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 À l'Aveugle — Tous droits réservés.</span>
+        <span class="wink">Pas de triche. Promis. 🏴‍☠️</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
