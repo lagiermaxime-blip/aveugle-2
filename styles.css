@@ -282,17 +282,19 @@ section { position: relative; }
   font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(2.8rem, 6.4vw, 5rem);
-  line-height: .98;
+  line-height: 1.12;        /* assez d'air pour que le surlignage ne morde pas les lignes voisines */
   letter-spacing: -.01em;
   color: var(--coral);
   margin-bottom: 1.6rem;
 }
 .hero__title .navy { color: var(--navy); }
 .hero__title .mark {
+  display: inline-block;
   color: var(--navy);
   background: var(--blue);
-  padding: 0 .12em;
-  border-radius: 4px;
+  padding: 0 .14em;
+  border-radius: 6px;
+  line-height: 1;           /* boîte de surlignage serrée autour de "VOUS" uniquement */
 }
 .hero__text {
   font-size: 1.12rem;
