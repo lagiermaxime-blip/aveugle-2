@@ -1,4 +1,4 @@
-# À l'Aveugle — Restaurant · Jeu de dégustation
+# Blind Toast — Restaurant · Jeu de dégustation
 
 Site vitrine d'un restaurant expérientiel basé sur un dîner mystère en 6 manches,
 où les convives devinent goûts, saveurs et ingrédients à l'aveugle.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Petit serveur statique pour prévisualiser le site À l'Aveugle."""
+"""Petit serveur statique pour prévisualiser le site Blind Toast."""
 import functools
 import http.server
 import os
@@ -11,5 +11,5 @@ PORT = 4173
 Handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=ROOT)
 
 with socketserver.TCPServer(("127.0.0.1", PORT), Handler) as httpd:
-    print(f"À l'Aveugle servi sur http://127.0.0.1:{PORT}")
+    print(f"Blind Toast servi sur http://127.0.0.1:{PORT}")
     httpd.serve_forever()
